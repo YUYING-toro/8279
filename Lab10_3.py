@@ -42,14 +42,12 @@ def etchSketch(x,y):
     while True:
         key = getchar()
 
-        # displayObject(toro,x,y)
         
         if key in  bmaps.keys(): #[key1key2....]
             displayObject(bmaps[key],x,y)
             lcd.show()
-
       
-        if key == 'q': #quit or start
+        if key == 'q': 
             lcd.clear()
             lcd.show()
 
